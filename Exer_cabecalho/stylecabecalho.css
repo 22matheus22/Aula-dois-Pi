@@ -40,4 +40,17 @@ h1 span {
 
 .home {
     color: orangered;
+    margin-right: 15px;
+}
+
+.sobre {
+    margin-right: 15px;
+}
+
+.contato {
+    margin-right: 15px;
+}
+
+.login {
+    margin-right: 15px;
 }

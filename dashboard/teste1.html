@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js" 
+    integrity="sha512-dnUg2JxjlVoXHVdSMWDYm2Y5xcIrJg1N+juOuRi0yLVkku/g26rwHwysJDAMwahaDfRpr1AxFz43ktuMPr/l1A==" 
+    crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="teste1.css">
+    <title>Grafico de Linha</title>
+</head>
+<body>
+
+    <div class="cabecalho">
+        <h1><span>GRÁFICO</span> - Nascimentos</h1> 
+    </div>
+
+        <div class="style_button">
+
+        <button class="botao home">HOME</button>
+        <button class="botao sobre">PAISES</button>
+        <button class="botao contato">GRAFICOS</button>
+        <button class="botao login">NUMEROS</button>
+
+        </div>
+    
+    <div style="width: 70%;"> 
+        <canvas id="line-chart"></canvas>
+    </div>
+
+</body>
+</html>
+
+<script>
+    var ctx = document.getElementById('line-chart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+                labels: ["1970","1980","1990","2000","2010","2020"],
+                datasets: [
+            {
+                label: "Nascimentos a cada 10 anos em São Paulo",
+                data: [200000,380000,420000,350000,300000,400000],
+                borderwidth: 6,
+                borderColor: 'rgba(77,166,253,0.85)',
+                backgroundColor: 'transparent',
+                },
+
+            {
+                label: "Nascimentos a cada 10 anos no Piauí",
+                data: [100000,280000,350000,300000,200000,300000],
+                borderwidth: 6,
+                borderColor: 'rgba(6,204,6,0.85)',
+                backgroundColor: 'transparent',
+            },
+
+            {
+                label: "Nascimentos a cada 10 anos no Brasil",
+                data: [500000,780000,970000,800000,700000,800000],
+                borderwidth: 6,
+                borderColor: 'rgba(255,255,0,1.0)',
+                backgroundColor: 'transparent',
+            }
+
+            ]
+        },
+
+        options: {
+            title:{
+                display: true,
+                fontSize: 20,
+                text: "RELATÓRIO DE NASCIMENTOS DO PAIS"
+            },
+            labels: {
+                fontStyle: "bold"
+            }
+        }
+    });
+</script>

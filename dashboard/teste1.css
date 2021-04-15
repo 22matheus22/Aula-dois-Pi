@@ -1,0 +1,57 @@
+body {
+    background-color:rgb(255, 255, 255);
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(245, 182, 140);
+}
+
+.cabecalho {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(111, 223, 189);
+    border-bottom: 3px solid rgb(255, 238, 0);
+
+}
+
+.cabecalho h1 { 
+
+    color: white;
+    margin-left: 120px;
+    padding-top: 15px;
+
+}
+
+h1 span {
+    color: rgb(255, 238, 0);
+}
+
+.style_button {
+    
+    float:right;
+    margin-right: 50px;
+    margin-top: -40px;
+
+}
+
+.botao {
+    background-color: black;
+    color: white;
+}
+
+.home {
+    color: orangered;
+    margin-right: 15px;
+}
+
+.sobre {
+    margin-right: 15px;
+}
+
+.contato {
+    margin-right: 15px;
+}
+
+.login {
+    margin-right: 15px;
+}
